@@ -10,9 +10,7 @@ namespace Solution
     {
         public static void Main(string[] args)
         {
-            BatchWrite(
-                Day6Part2.Run()
-            );
+            BatchWrite();
         }
         public static void BatchWrite(params object[] toWrite)
         {
