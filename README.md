@@ -7,16 +7,14 @@
   - My **[advent of code](https://adventofcode.com/)** solutions. 
 
 # Languages
-
-  &emsp; ![](langs/rust.png) ![](langs/csharp.png) 
   
-# Rust 
+### ![](langs/rust.png)
   
   - **2015**
     - **Days**: 1, 2, 3, 4, 5, 6, 9, 12
   - **2023**
     - **Days**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 19
 
-# C#
+### ![](langs/csharp.png)
   - **2015**
-    - **Days**: 1
+    - **Days**: 1, 3, 4, 5, 6

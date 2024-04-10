@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Solution.year_2015.day_1
+﻿namespace Solution.year_2015.day_1
 {
     public static class Day1Part2
     {
@@ -23,6 +17,11 @@ namespace Solution.year_2015.day_1
                 counter++;
             }
             return counter;
+        }
+        public static int Run()
+        {
+            string input = File.ReadAllText("year-2015/day-01/input.txt");
+            return Day1Part2.Proccess(input);
         }
     }
     public static class Day1Part2Test
