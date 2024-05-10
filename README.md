@@ -1,4 +1,4 @@
-# Advent Of Code
+# Advent of Code Solutions
   
   - Made by **```p4lm4d3v```**
 
@@ -8,7 +8,7 @@
 
 # Languages
   
-### [![](langs/rust.png)](https://github.com/p4lm4d3v/advent-of-code/tree/main/Rust)
+  ### [Rust](https://www.rust-lang.org/)
   
   - **[2015](https://github.com/p4lm4d3v/advent-of-code/tree/main/Rust/year-2015)**
     - **Days**: 
@@ -35,7 +35,8 @@
     [11](https://github.com/p4lm4d3v/advent-of-code/tree/main/Rust/year-2023/day-11),
     [19](https://github.com/p4lm4d3v/advent-of-code/tree/main/Rust/year-2023/day-19)
 
-### [![](langs/csharp.png)](https://github.com/p4lm4d3v/advent-of-code/tree/main/C%23)
+  ### [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
+
   - **[2015](https://github.com/p4lm4d3v/advent-of-code/tree/main/C%23/year-2015)**
     - **Days**: 
     [1](https://github.com/p4lm4d3v/advent-of-code/tree/main/C%23/year-2015/day-1), 
