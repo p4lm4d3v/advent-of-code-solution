@@ -25,6 +25,7 @@ fn process(input: &str) -> usize {
     let mut state = State::new("", 0);
 
     for c in input.chars() {
+        state.data += &c.to_string();
         if c == '(' {
             state.floor += 1;
         }
@@ -34,7 +35,6 @@ fn process(input: &str) -> usize {
         if state.floor == -1 {
             break;
         }
-        state.data += &c.to_string();
     }
 
     state.data.len()

@@ -28,10 +28,14 @@ mod test1 {
     }
     #[test]
     fn test7() {
-        assert_eq!(-3, process(")))"));
+        assert_eq!(-1, process("))("));
     }
     #[test]
     fn test8() {
+        assert_eq!(-3, process(")))"));
+    }
+    #[test]
+    fn test9() {
         assert_eq!(-3, process(")())())"));
     }
 }

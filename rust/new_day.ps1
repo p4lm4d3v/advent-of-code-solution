@@ -31,7 +31,7 @@ function Create-Part {
     Special-Write -path test$n.rs -lines @(
       "#[cfg(test)]",
       "mod test$n {",
-      "  use super::*;",
+      "  use crate::process;",
       "}"
     )
     New-Item -ItemType File -Path part$n.rs *>&1 | Out-Null 
@@ -39,8 +39,8 @@ function Create-Part {
       "mod test$n;",
       "",
       "fn main() {",
-      "  let input: &str = include_str!(`"./input$n.txt`");",
-      "  let output: i32 = process(input);",
+      "  let input = include_str!(`"./input$n.txt`");",
+      "  let output = process(input);",
       "  dbg!(`"{}`", output);",
       "}",
       "",
