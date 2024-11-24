@@ -1,0 +1,14 @@
+﻿[package]
+name = "d3"
+version = "0.1.0"
+dition = "2021"
+
+[[bin]]
+name = "part1"
+path = "src/part1/part1.rs"
+
+[[bin]]
+name = "part2"
+path = "src/part2/part2.rs"
+
+[dependencies]
