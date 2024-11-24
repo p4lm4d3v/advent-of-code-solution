@@ -1,5 +1,5 @@
 ﻿#[cfg(test)]
-mod test1 {
+mod tests1 {
   use crate::process;
 
 	 #[test]

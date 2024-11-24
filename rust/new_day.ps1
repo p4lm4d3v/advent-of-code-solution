@@ -30,13 +30,13 @@ function Create-Part {
     New-Item -ItemType File      -Path test$n.rs   *>&1 | Out-Null 
     Special-Write -path test$n.rs -lines @(
       "#[cfg(test)]",
-      "mod test$n {",
+      "mod tests$n {",
       "  use crate::process;",
       "}"
     )
     New-Item -ItemType File -Path part$n.rs *>&1 | Out-Null 
     Special-Write -path part$n.rs -lines @(
-      "mod test$n;",
+      "mod tests$n;",
       "",
       "fn main() {",
       "  let input = include_str!(`"./input$n.txt`");",
