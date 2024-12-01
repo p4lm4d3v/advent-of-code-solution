@@ -27,16 +27,25 @@ function Create-Part {
 
     New-Item -ItemType File      -Path input$n.txt *>&1 | Out-Null
     "" | Out-File -FilePath input$n.txt -Append -Encoding utf8
-    New-Item -ItemType File      -Path test$n.rs   *>&1 | Out-Null 
-    Special-Write -path test$n.rs -lines @(
+
+    New-Item -ItemType Directory -Path test        *>&1 | Out-Null
+    Set-Location test
+
+    New-Item -ItemType File      -Path mod.rs      *>&1 | Out-Null
+    Special-Write -path mod.rs -lines @("pub mod test;")
+
+    New-Item -ItemType File      -Path test.rs   *>&1 | Out-Null 
+    Special-Write -path test.rs -lines @(
       "#[cfg(test)]",
       "mod t$n {",
       "  use crate::process;",
       "}"
     )
+    Set-Location ..
+    
     New-Item -ItemType File -Path part$n.rs *>&1 | Out-Null 
     Special-Write -path part$n.rs -lines @(
-      "mod test$n;",
+      "mod test;",
       "",
       "fn main() {",
       "  let input = include_str!(`"./input$n.txt`");",
