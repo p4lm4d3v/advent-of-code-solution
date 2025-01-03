@@ -1,0 +1,13 @@
+[package]
+name = "d5"
+version = "0.1.0"
+dition = "2021"
+
+[[bin]]
+name = "part1"
+path = "part1/src/main.rs"
+
+[[bin]]
+name = "part2"
+path = "part2/src/main.rs"
+
